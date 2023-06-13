@@ -1,9 +1,10 @@
+require('dotenv').config();
 const { Telegraf } = require('telegraf');
 const { createReadStream } = require('fs');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 const ffmpeg = require('fluent-ffmpeg');
 
-const bot = new Telegraf('BOT_TOKEN');
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
 bot.start((ctx) => ctx.reply('Welcome to the M3U8 to MP3 converter bot! Send me an M3U8 file or URL to convert.'));
 bot.on('message', async (ctx) => {
