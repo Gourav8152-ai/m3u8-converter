@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/telegram.js": {
-      "runtime": "nodejs14"
+      "runtime": "nodejs@14"
     }
   },
   "routes": [
