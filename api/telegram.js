@@ -3,6 +3,7 @@ const { Telegraf } = require('telegraf');
 const { createReadStream } = require('fs');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 const ffmpeg = require('fluent-ffmpeg');
+const path = require('path');
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
@@ -21,7 +22,9 @@ bot.on('message', async (ctx) => {
 });
 
 function convertM3U8(input, ctx) {
-  const output = '/path/to/output.mp3'; // Replace with your desired output path and filename
+  const outputFilename = 'output.mp3'; // Default output filename
+  const output = path.join(__dirname, outputFilename);
+  
   const command = ffmpeg()
     .setFfmpegPath(ffmpegInstaller.path)
     .input(input)
