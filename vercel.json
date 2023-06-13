@@ -6,7 +6,7 @@
   },
   "routes": [
     {
-      "src": "/telegram",
+      "src": "/(.*)",
       "dest": "/api/telegram.js"
     }
   ]
