@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/telegram.js": {
+      "runtime": {
+        "name": "nodejs",
+        "version": "16.9.0"
+      }
+    }
+  },
+  "routes": [
+    {
+      "src": "/telegram",
+      "dest": "/api/telegram.js"
+    }
+  ]
+}
