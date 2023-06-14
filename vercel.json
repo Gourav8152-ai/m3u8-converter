@@ -3,7 +3,6 @@
   "name": "m3u8-converter",
   "functions": {
     "api/telegram.js": {
-      "runtime": "@vercel/nodejs12",
       "memory": 512,
       "maxDuration": 10
     }
