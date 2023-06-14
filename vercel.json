@@ -3,5 +3,9 @@
   "name": "m3u8-converter",
   "routes": [
     { "src": "/(.*)", "dest": "/api/telegram.js" }
-  ]
+  ],
+  "functions": {
+      "api/telegram.js": {
+        "timeout": 30
+      }
 }
