@@ -2,7 +2,7 @@
   "name": "m3u8-converter",
   "version": "1.0.0",
   "description": "A Node.js-based bot for converting M3U8 audio playlists to MP3 format with ease. Enjoy your favorite music on any MP3-compatible device.",
-  "main": "index.js",
+  "main": "api/telegram.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
