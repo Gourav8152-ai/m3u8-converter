@@ -5,6 +5,6 @@
     { "src": "/api/telegram.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/telegram.js", "dest": "/api/telegram.js" }
+    { "src": "/(.*)", "dest": "/api/telegram.js" }
   ]
 }
