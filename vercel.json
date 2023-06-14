@@ -5,7 +5,7 @@
     "api/telegram.js": {
       "runtime": "@vercel/nodejs12",
       "memory": 512,
-      "maxDuration": 60
+      "maxDuration": 10
     }
   },
   "routes": [
