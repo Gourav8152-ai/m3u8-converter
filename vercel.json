@@ -1,9 +1,6 @@
 {
   "version": 2,
   "name": "m3u8-converter",
-  "builds": [
-    { "src": "/api/telegram.js", "use": "@vercel/node" }
-  ],
   "routes": [
     { "src": "/(.*)", "dest": "/api/telegram.js" }
   ]
